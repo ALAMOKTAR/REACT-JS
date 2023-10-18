@@ -8,7 +8,7 @@ function Application() {
   return (
     <>
        <div class="app">
-        
+        {/* Partie Navbar */}
         <Navbar bg="dark" data-bs-theme="dark">
           <Container >
             <Navbar.Brand href="#home">Navbar</Navbar.Brand>
@@ -20,11 +20,12 @@ function Application() {
           </Container>
         </Navbar>
         <br />
-        
+        {/* Partie Header */}
         <h1 style={{color:"red",textAlign:"center", fontSize:80}}class="text-center" >MY FIRST REACT APP </h1>
         <br></br>
+        {/* cartes container */}
         <Row xs={1} md={3} className="g-3" style={{border:25}}>
-      
+      {/* container 1 */}
         <Col key={1}>
           <Card>
            <Card.Img variant="top" src={health} style={{height:250}}/>
@@ -37,6 +38,7 @@ function Application() {
             </Card.Body>
           </Card>
         </Col>
+        {/* container 2 */}
         <Col key={2}>
         <Card>
           <Card.Img variant="top" src={education} style={{height:250}}/>
@@ -49,6 +51,7 @@ function Application() {
           </Card.Body>
         </Card>
       </Col>
+      {/* container 3 */}
       <Col key={3}>
       <Card>
         <Card.Img variant="top" src={nature} style={{height:250}}/>
@@ -62,7 +65,7 @@ function Application() {
         </Card.Body>
       </Card>
     </Col>
-     
+
     </Row> 
                 
       </div>
